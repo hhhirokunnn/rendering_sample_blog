@@ -10,6 +10,37 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="background">
+      <div class="wrap">
+        <div class="header">
+          <div class="head_title">
+            みんなのクラスルーム
+            <button type="button" class="btn btn-primary head_signin">ログイン</button>
+          </div>
+          <div class="head_navi">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">トップ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">コンテンツ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">日記</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">投稿</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">コンタクト</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="body_wrap">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
