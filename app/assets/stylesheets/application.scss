@@ -18,15 +18,35 @@
 @import "bootstrap";
 
 .background {
-  background-color: #fff3c2;
-  height: 1000px;
+  @media (min-width: 1025px) {
+    background-color: #fff3c2;
+  }
+  padding-bottom: 50px;
 }
 
 .wrap {
-  margin: auto;
-  width: 700px;
+  @media (min-width: 980px) {
+    font-size: 40px;
+    h2 {
+      font-size: 70px;
+    }
+  }
+  @media (min-width: 1024px) {
+    font-size: 40px;
+    h2 {
+      font-size: 70px;
+    }
+  }
+  @media (min-width: 1025px) {
+    margin: auto;
+    width: 700px;
+    font-size: 15px;
+    h2 {
+      font-size: 30px;
+    }
+  }
   background-color: white;
-  height: 1000px;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -34,26 +54,42 @@
 }
 
 .head_title {
-  height: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(image-path('back.jpg'));
-  background-size:auto;
-  width: 700px;
   position: relative;
   margin: auto;
   text-align: center;
   padding-top: 25px;
-  font-size: 30px;
   font-weight: bold;
+  background-color: #5cb85c;
+  @media (min-width: 980px) {
+    height: 200px;
+  }
+  @media (min-width: 1024px) {
+    height: 200px;
+  }
+  @media (min-width: 1025px) {
+    width: 700px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image-path('back.jpg'));
+    background-size:auto;
+  }
 }
 
 .head_signin {
   position: absolute;
   right: 20px;
-  bottom: 5px;
-  font-size: 15px;
+  bottom: 3px;
   font-weight: normal;
+  @media (min-width: 980px) {
+    font-size: 50px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 15px;
+  }
 }
 
 .head_signin:hover {

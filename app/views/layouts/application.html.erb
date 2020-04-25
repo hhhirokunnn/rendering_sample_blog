@@ -14,16 +14,16 @@
       <div class="wrap">
         <div class="header">
           <div class="head_title">
-            みんなのクラスルーム
+            <h2>みんなのクラスルーム</h2>
             <button type="button" class="btn btn-primary head_signin">ログイン</button>
           </div>
           <div class="head_navi">
             <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a class="nav-link active" href="#">トップ</a>
+                <a class="nav-link <%= 'active' if request.path === '/' %>" href="/">トップ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">コンテンツ</a>
+                <a class="nav-link <%= 'active' if request.path === '/articles' %>" href="/articles">アクティビティ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">日記</a>
@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">投稿</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">コンタクト</a>
+                <a class="nav-link" href="#">お問い合わせ</a>
               </li>
             </ul>
           </div>
